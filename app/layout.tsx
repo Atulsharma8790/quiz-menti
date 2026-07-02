@@ -7,14 +7,14 @@ import PortfolioBar from '@/components/PortfolioBar'
 export const metadata: Metadata = {
   title: 'QuizMenti — Live Interactive Quizzes',
   description: 'Host live quiz sessions with unique room codes. Participants join on any device — no sign-up needed.',
-  authors: [{ name: "Atul Sharma", url: "https://atul-sharma-qa.vercel.app" }],
+  authors: [{ name: "Atul Sharma", url: "https://atulsharma.vercel.app" }],
   creator: "Atul Sharma",
 }
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body suppressHydrationWarning>
-        <Suspense fallback={null}><PortfolioBar /></Suspense>{children}</body>
+        <Suspense fallback={null}><PortfolioBar /></Suspense>{children}<Suspense fallback={null}><PortfolioBar /></Suspense></body>
     </html>
   )
 }
